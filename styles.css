@@ -45,24 +45,12 @@ header {
     font-weight: bold;
 }
 
-footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
    
-}
-
-img {
-    max-width: 300px;
-    height: auto; /* Maintain aspect ratio */
 }
 
 .resized-centered-image { 
@@ -78,14 +66,89 @@ header {
 
 }
 
-.footer {
-    background-image: url('https://thumbs.dreamstime.com/b/pandas-background-pattern-19814499.jpg'); 
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
+/* Styles for navigation links */
+nav {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    color: #33ff4e; /* Change color on hover */
+   
+}
+
+html {
+    font-size: 30px; 
+  }
+  
+
+  img {
+    max-width: 100%; 
+    height: auto; 
+    width: 20rem; 
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.item {
+    background-color: #f70606;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.contact-form {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 1fr 1fr); 
+    grid-gap: 10px; 
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 1px;
+    padding: 7px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1px;
+    cursor: pointer;
+    text-align: center;
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
